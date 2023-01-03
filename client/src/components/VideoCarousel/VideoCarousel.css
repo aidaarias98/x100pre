@@ -1,0 +1,76 @@
+.carousel{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel .slide{
+    height: 70vh;
+    background-color: none;
+}
+
+.carousel .slide video{
+    max-height: 100%;
+    width: 100%;
+}
+
+.video{
+    margin: 0 auto;
+    height: 90%;
+    width:auto;
+    
+
+}
+
+@media only screen and (max-width:1200px){
+    .carousel{
+        height: 90vh;
+
+    }
+    .carousel .slide video{
+        margin: 10vh auto;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .carousel{
+        height: 80vh;
+
+    }
+    .carousel .slide video{
+        margin: 10vh auto;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .carousel{
+        height: 70vh;
+
+    }
+    .carousel .slide video{
+        margin: 10vh auto;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .carousel{
+        height: 60vh;
+
+    }
+    .carousel .slide video{
+        margin: 10vh auto;
+        width: 100vw;
+    }
+}
+@media only screen and (max-width:500px){
+    .carousel{
+        height: 50vh;
+
+    }
+    .carousel .slide video{
+        margin: 10vh auto;
+        width: 100vw;
+    }
+}
