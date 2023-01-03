@@ -13,6 +13,16 @@ const db = mysql.createConnection({
     database:'x100pre',
 });
 
+db.connect((err) => {
+
+    if (err) {
+        console.log(`Can't connect to database`, err)
+        return;
+    }
+
+    console.log(`Connected to database`)
+})
+
 app.get('/',(req,res)=>{
     res.json("THERES A CONNECTION WITH THE BACKEND :P")
 });
