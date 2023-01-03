@@ -1,6 +1,11 @@
-import express from "express"
-import mysql from 'mysql'
-import cors from 'cors';
+// import express from "express"
+// import mysql from 'mysql'
+// import cors from 'cors';
+
+const express= require("express");
+const  mysql= require('mysql');
+const  cors= require('cors');
+const path=require('path');
 
 const app = express()
 app.use(express.json());
@@ -34,6 +39,14 @@ app.get('/products', (req,res)=>{
         return res.json(data)
     });
 });
+
+//EXPRESS USING PATH
+
+app.use(express.static(path.join(__dirname, './client', './build')));
+app.use((req,res)=>{
+    res.sendFile(path.join(__dirname, './client', './build', 'index.html'));
+});
+
 
 
 app.listen(5000, ()=>{
