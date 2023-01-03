@@ -28,9 +28,9 @@ db.connect((err) => {
     console.log(`Connected to database`)
 })
 
-app.get('/',(req,res)=>{
-    res.json("THERES A CONNECTION WITH THE BACKEND :P")
-});
+// app.get('/',(req,res)=>{
+//     res.json("THERES A CONNECTION WITH THE BACKEND :P")
+// });
 
 app.get('/products', (req,res)=>{
     const q ="SELECT * FROM products"
